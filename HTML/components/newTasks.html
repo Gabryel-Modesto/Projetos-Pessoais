@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>novaTarefa</title>
+    <link rel="stylesheet" href="/projeto-Pessoal/CSS/components/newTasks.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Cadastro de novas tarefas</h1>
+        <div id="navigationButtons">
+            <a href="../index.html"><button id="btnBackFirst">Voltar a página inicial</button></a>
+        </div>
+    </header>
+    <br><br>
+    <div id="card">
+        <section id="newTasks">
+            <label for="taskID">ID da Tarefa:</label>
+            <br>
+            <input type="text" id="taskID" name="taskID" disabled>
+            <br><br>
+
+            <label for="taskName">Inclua uma nova tarefa:</label>
+            <br>
+            <input type="text" id="taskName" name="taskName" placeholder="Nome da tarefa" required>
+            <br><br>
+
+            <label for="taskDate">Data da Tarefa:</label>
+            <br>
+            <input type="date" id="taskDate" name="taskDate">
+            <br><br>
+
+            <label for="descriptionTasks">Descrição da Tarefa:</label>
+            <br>
+            <textarea id="descriptionTasks" name="descriptionTasks" placeholder="Descrição detalhada"></textarea>
+            <br><br>
+
+            <label for="priorityTasks">Prioridade:</label>
+            <br>
+            <input type="radio" id="priorityUrgente" name="priorityTasks" value="Urgente"> Urgente
+            <input type="radio" id="priorityMedia" name="priorityTasks" value="Média"> Média
+            <input type="radio" id="priorityBaixa" name="priorityTasks" value="Baixa"> Baixa
+            <br><br>
+
+            <div id="statusSection" style="display: none;">
+                <label for="statusTasks">Status da Tarefa:</label>
+                <select id="statusTasks" name="statusTasks">
+                    <option value="feita">Feita</option>
+                    <option value="emAprovacao">Em andamento</option>
+                    <option value="negada">Negada</option>
+                </select>
+                <br><br>
+            </div>
+        </section>
+
+        <button id="addTaskButton">Adicionar Tarefa</button>
+    </div>
+
+
+    <div id="card">
+        <section id="successTasks"></section>
+        <div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
