@@ -1,19 +1,127 @@
 * {
     margin: 0;
     padding: 0;
-}
-header {
-    text-align: center;
+    
 }
 
 
+body {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+#navigationButtons{
+    text-align: right;
+}
 
 #card {
-    border: 1px solid #ddd;
+    text-align: center;
+    border: 2px solid #91c7f7;
+    box-shadow: 4px 6px #bde0fe;
     border-radius: 24px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
     margin: 20px;
     padding: 20px;
-    width: 300px;
+
+}
+
+#newTasks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btnAddTasks {
+    justify-content: center;
     text-align: center;
-} 
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#tasksID {
+    background-color: white;
+    width: 100px;
+    height: 25px;
+    border: 2px solid #80ed99;
+    border-radius: 4px;
+}
+
+#tasksName {
+    width: 250px;
+    height: 25px;
+    border: 2px solid #80ed99;
+    border-radius: 4px;
+}
+
+#tasksDate {
+    width: 250px;
+    height: 25px;
+    border: 2px solid #80ed99;
+    border-radius: 4px;
+}
+
+#tasksDescription {
+    width: 250px;
+    height: 50px;
+    border: 2px solid #80ed99;
+    border-radius: 4px;
+}
+
+#opcoesPriority {
+    width: 250px;
+    height: 50px;
+    border: 2px solid #80ed99 ;
+    border-radius: 4px;
+}
+
+#priorityAlta {
+    margin-right: 5px;
+    padding-right: 5px;
+}
+
+#priorityMedia {
+    margin-left: 5px;
+    padding-left: 5px;
+}
+
+#priorityBaixa {
+    margin-left: 5px;
+    padding-left: 5px;
+}
+
+#addTaskButton {
+    width: 250px;
+    height: 25px;
+    background-color: white;
+    border: 2px solid #80ed99;
+    border-radius: 4px;
+    box-shadow: 3px 4px #c7f9cc;
+    cursor: pointer;
+}
+
+#btnBackFirst{
+    margin-top: 10px;
+    width: 250px;
+    height: 25px;
+    background-color: white;
+    border: 2px solid #00b4d8;
+    border-radius: 4px;
+    box-shadow: 3px 4px #90e0ef ;
+    cursor: pointer;
+}
+
+input{
+    text-align: center;
+}
+
+textarea{
+    text-align: center;
+}

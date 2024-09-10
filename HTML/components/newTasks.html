@@ -5,46 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>novaTarefa</title>
-    <link rel="stylesheet" href="/projeto-Pessoal/CSS/components/newTasks.css">
+    <link rel="stylesheet" href="/listaDeTarefas/CSS/components/newTasks.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Cadastro de novas tarefas</h1>
-        <div id="navigationButtons">
-            <a href="../index.html"><button id="btnBackFirst">Voltar a página inicial</button></a>
-        </div>
+        <h1>Novas Tarefas</h1>
     </header>
     <br><br>
+
     <div id="card">
         <section id="newTasks">
-            <label for="taskID">ID da Tarefa:</label>
-            <br>
-            <input type="text" id="taskID" name="taskID" disabled>
-            <br><br>
 
-            <label for="taskName">Inclua uma nova tarefa:</label>
-            <br>
-            <input type="text" id="taskName" name="taskName" placeholder="Nome da tarefa" required>
-            <br><br>
+            <div id="ID">
+                <label for="tasksID">ID da Tarefa:</label>
+                <br>
+                <input type="text" id="tasksID" name="tasksID" disabled>
+                <br><br>
+            </div>
+            <div id="name">
+                <label for="tasksName">Inclua uma nova tarefa:</label>
+                <br>
+                <input type="text" id="tasksName" name="tasksName" placeholder="Nome da tarefa" required>
+                <br><br>
+            </div>
+            <div id="dateTasks">
+                <label for="tasksDate">Data da Tarefa:</label>
+                <br>
+                <input type="date" id="tasksDate" name="tasksDate" required>
+                <br><br>
+            </div>
 
-            <label for="taskDate">Data da Tarefa:</label>
-            <br>
-            <input type="date" id="taskDate" name="taskDate">
-            <br><br>
+            <div id="description">
+                <label for="tasksDescription">Descrição da Tarefa:</label>
+                <br>
+                <textarea id="tasksDescription" name="tasksDescription" placeholder="Descrição detalhada" required></textarea>
+                <br><br>
+            </div>
 
-            <label for="descriptionTasks">Descrição da Tarefa:</label>
-            <br>
-            <textarea id="descriptionTasks" name="descriptionTasks" placeholder="Descrição detalhada"></textarea>
-            <br><br>
-
-            <label for="priorityTasks">Prioridade:</label>
-            <br>
-            <input type="radio" id="priorityUrgente" name="priorityTasks" value="Urgente"> Urgente
-            <input type="radio" id="priorityMedia" name="priorityTasks" value="Média"> Média
-            <input type="radio" id="priorityBaixa" name="priorityTasks" value="Baixa"> Baixa
-            <br><br>
+            <label for="tasksPriority">Prioridade:</label>
+            <div id="opcoesPriority" >
+                <br>
+                <input type="radio" id="priorityAlta" name="tasksPriority" value="Alta" required> Alta
+                <input type="radio" id="priorityMedia" name="tasksPriority" value="Média" required> Média
+                <input type="radio" id="priorityBaixa" name="tasksPriority" value="Baixa" required> Baixa
+                <br><br>
+            </div>
 
             <div id="statusSection" style="display: none;">
                 <label for="statusTasks">Status da Tarefa:</label>
@@ -56,16 +63,13 @@
                 <br><br>
             </div>
         </section>
-
+    </div>
+    <div>
         <button id="addTaskButton">Adicionar Tarefa</button>
     </div>
 
-
-    <div id="card">
-        <section id="successTasks"></section>
-        <div>
-
-        </div>
+    <div id="navigationButtons">
+        <a href="../index.html"><button id="btnBackFirst">Voltar a página inicial</button></a>
     </div>
 
 </body>
