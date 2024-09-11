@@ -5,31 +5,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarefas Feitas</title>
-    <link rel="stylesheet" href="/listaDeTarefas/CSS/components/successTasks.css">
+    <link rel="stylesheet" href="/CSS/components/successTasks.css">
 </head>
 
 <body>
     <header>
         <h1>Tarefas Feitas</h1>
-        <div id="navigationButtons">
-            <a href="../index.html"><button id="btnBackFirst">Voltar a página inicial</button></a>
-        </div>
         <br>
     </header>
 
     <div id="completedTasks">
         <label for="nameOrID">Informe o nome ou ID da tarefa:</label>
+        <br>
         <input type="text" name="nameOrID" id="nameOrID">
         <br><br>
+    </div>
 
-        <button type="searchSuccessTasks">Pesquisar</button>
+    <div>
+        <button type="submit" id="searchSuccessTasks">Pesquisar</button>
+    </div>
+
+    <div id="card">
+        <section id="newTasks">
+
+            <div>
+                <label for="tasksID">ID da Tarefa:</label>
+                <br>
+                <input type="text" id="tasksID" name="tasksID" disabled>
+                <br><br>
+            </div>
+
+            <div>
+                <label for="">Data de conclusão:</label>
+                <br>
+                <input type="date" name="" id="taskCompletionDate" disabled>
+                <br><br>
+            </div>
+
+            <div>
+                <label for="tasksName">Inclua uma nova tarefa:</label>
+                <br>
+                <input type="text" id="tasksName" name="tasksName" disabled>
+                <br><br>
+            </div>
+            <div>
+                <label for="tasksDate">Data da Tarefa:</label>
+                <br>
+                <input type="date" id="tasksDate" name="tasksDate" disabled>
+                <br><br>
+            </div>
+
+            <div>
+                <label for="tasksDescription">Descrição da Tarefa:</label>
+                <br>
+                <textarea id="tasksDescription" name="tasksDescription"  disabled></textarea>
+                <br><br>
+            </div>
+
+            <label for="tasksPriority">Prioridade:</label>
+            <div id="opcoesPriority" >
+                <br>
+                <input type="radio" id="priorityAlta" name="tasksPriority" value="Alta" disabled> Alta
+                <input type="radio" id="priorityMedia" name="tasksPriority" value="Média" disabled> Média
+                <input type="radio" id="priorityBaixa" name="tasksPriority" value="Baixa" disabled> Baixa
+                <br><br>
+            </div>
+
+            <div id="statusSection" style="display: none;">
+                <label for="statusTasks">Status da Tarefa:</label>
+                <select id="statusTasks" name="statusTasks">
+                    <option value="feita">Feita</option>
+                    <option value="emAprovacao">Em andamento</option>
+                    <option value="deleted">Excluída</option>
+                </select>
+                <br><br>
+            </div>
+        </section>
+    </div>
+
+    <div id="navigationButtons">
+        <a href="../index.html"><button id="btnBackFirst">Voltar a página inicial</button></a>
     </div>
 
     <footer>
-        <p>Criado por Gabryel de Souza</p>
+        <p>Criado por Gabryel de Souza Modesto</p>
     </footer>
 
-    <script src="/projeto-Pessoal/JS/components/successTasks.js" type="module"></script>
+    <script src="/JS/components/successTasks.js" type="module"></script>
 </body>
 
 </html>

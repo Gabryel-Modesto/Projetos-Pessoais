@@ -5,32 +5,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarefas Excluídas</title>
-    <link rel="stylesheet" href="/listaDeTarefas/CSS/components/deleteTasks.css">
+    <link rel="stylesheet" href="/CSS/components/deleteTasks.css">
 </head>
 
 <body>
     <header>
         <h1>Tarefas Excluídas</h1>
-        <div id="navigationButtons">
-            <a href="../index.html"><button id="btnBackFirst">Voltar a página inicial</button></a>
-        </div>
         <br>
     </header>
 
     <div id="deletedTasks">
-
         <label for="nameOrID">Informe o nome ou ID da tarefa:</label>
+        <br>
         <input type="text" name="nameOrID" id="nameOrID">
         <br><br>
-
-        <button type="searchDeleteTasks">Pesquisar</button>
     </div>
 
+    <div>
+        <button type="submit" id="searchSuccessTasks">Pesquisar</button>
+    </div>
+
+    <div id="card">
+        <section id="newTasks">
+
+            <div id="ID">
+                <label for="tasksID">ID da Tarefa:</label>
+                <br>
+                <input type="text" id="tasksID" name="tasksID" disabled>
+                <br><br>
+            </div>
+            <div id="deleteDate">
+                <label for="deleteOfDate">Data de exclusão:</label>
+                <br>
+                <input type="date" name="deleteOfDate" id="deleteOfDate" disabled>
+                <br><br>
+            </div>
+
+            <div id="name">
+                <label for="tasksName">Tarefa excluida:</label>
+                <br>
+                <input type="text" id="tasksName" name="tasksName" disabled>
+                <br><br>
+            </div>
+            <div id="dateTasks">
+                <label for="tasksDate">Data da Tarefa:</label>
+                <br>
+                <input type="date" id="tasksDate" name="tasksDate" disabled>
+                <br><br>
+            </div>
+
+            <div id="description">
+                <label for="tasksDescription">Descrição da Tarefa:</label>
+                <br>
+                <textarea id="tasksDescription" name="tasksDescription"  disabled></textarea>
+                <br><br>
+            </div>
+
+            <label for="tasksPriority">Prioridade:</label>
+            <div id="opcoesPriority" >
+                <br>
+                <input type="radio" id="priorityAlta" name="tasksPriority" value="Alta" disabled> Alta
+                <input type="radio" id="priorityMedia" name="tasksPriority" value="Média" disabled> Média
+                <input type="radio" id="priorityBaixa" name="tasksPriority" value="Baixa" disabled> Baixa
+                <br><br>
+            </div>
+
+            <div id="statusSection" style="display: none;">
+                <label for="statusTasks">Status da Tarefa:</label>
+                <select id="statusTasks" name="statusTasks">
+                    <option value="feita">Feita</option>
+                    <option value="emAprovacao">Em andamento</option>
+                    <option value="negada">Negada</option>
+                </select>
+                <br><br>
+            </div>
+        </section>
+    </div>
+
+    <div id="navigationButtons">
+        <a href="../index.html"><button id="btnBackFirst">Voltar a página inicial</button></a>
+    </div>
+
+
     <footer>
-        <p>Criado por Gabryel de Souza</p>
+        <p>Criado por Gabryel de Souza Modesto</p>
     </footer>
 
-    <script src="/projeto-Pessoal/JS/components/deleteTasks.js" type="module"></script>
+    <script src="/JS/components/deleteTasks.js" type="module"></script>
 </body>
 
 </html>
