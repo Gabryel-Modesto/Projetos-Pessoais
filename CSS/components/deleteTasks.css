@@ -1,0 +1,164 @@
+* { 
+margin: 0;
+padding: 0;
+}
+
+body {
+margin-top: 40px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #a2d2ff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#deletedTasks{
+margin-top: 200px;
+}
+
+#nameOrID{
+width: 250px;
+height: 25px;
+border: 2px solid #00b4d8;
+border-radius: 4px;
+}
+
+#searchSuccessTasks{
+width: 250px;
+height: 25px;
+background-color: white;
+border: 2px solid #80ed99;
+border-radius: 4px;
+box-shadow: 3px 4px #c7f9cc;
+cursor: pointer;
+
+}
+
+#card {
+text-align: center;
+border: 2px solid #91c7f7;
+box-shadow: 4px 6px #bde0fe;
+border-radius: 24px;
+width: 500px;
+margin: 20px;
+padding: 20px;
+
+}
+
+#newTasks{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+#tasksID {
+background-color: white;
+width: 250px;
+height: 25px;
+border: 2px solid #80ed99;
+border-radius: 4px;
+}
+
+#deleteOfDate{
+width: 250px;
+height: 25px;
+border: 2px solid #80ed99;
+border-radius: 4px;
+}
+
+#tasksName {
+width: 250px;
+height: 25px;
+border: 2px solid #80ed99;
+border-radius: 4px;
+}
+
+#tasksDate {
+width: 250px;
+height: 25px;
+border: 2px solid #80ed99;
+border-radius: 4px;
+}
+
+#tasksDescription {
+width: 250px;
+height: 50px;
+border: 2px solid #80ed99;
+border-radius: 4px;
+}
+
+#opcoesPriority {
+width: 250px;
+height: 50px;
+border: 2px solid #80ed99 ;
+border-radius: 4px;
+}
+
+#priorityAlta {
+margin-right: 5px;
+padding-right: 5px;
+}
+
+#priorityMedia {
+margin-left: 5px;
+padding-left: 5px;
+}
+
+#priorityBaixa {
+margin-left: 5px;
+padding-left: 5px;
+}
+
+#btnBackFirst{
+margin-top: 10px;
+width: 250px;
+height: 25px;
+background-color: white;
+border: 2px solid #00b4d8;
+border-radius: 4px;
+box-shadow: 3px 4px #90e0ef ;
+cursor: pointer;
+}
+
+input{
+text-align: center;
+}
+
+textarea{
+text-align: center;
+}
+
+
+#btnBackFirst{
+margin-top: 10px;
+width: 250px;
+height: 25px;
+background-color: white;
+border: 2px solid #00b4d8;
+border-radius: 4px;
+box-shadow: 3px 4px #90e0ef ;
+cursor: pointer;
+}
+
+
+footer{
+
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+background-color: #7ADFBB; 
+text-align: center;
+padding: 10px 0;
+
+}

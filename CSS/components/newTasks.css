@@ -13,9 +13,13 @@ body {
 }
 
 header{
-    width: 200px;
-    display: flex;
-    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #a2d2ff;
+    padding: 10px 0;
+    text-align: center;
 }
 
 #navigationButtons{
@@ -124,4 +128,16 @@ input{
 
 textarea{
     text-align: center;
+}
+
+footer{
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #7ADFBB; 
+    text-align: center;
+    padding: 10px 0;
+
 }
