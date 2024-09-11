@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 60px; 
+    padding-top: 60px;
 
 }
 
@@ -27,7 +27,7 @@ body {
     text-align: center;
 }
 
-#btnNewTasks{
+#btnNewTasks {
     background-color: #fff;
     width: 250px;
     height: 25px;
@@ -35,11 +35,11 @@ body {
     cursor: pointer;
 }
 
-#btnNewTasks:hover{
+#btnNewTasks:hover {
     background-color: #BFFFF1;
 }
 
-#btnSuccessTasks{
+#btnSuccessTasks {
     background-color: #fff;
     width: 250px;
     height: 25px;
@@ -47,11 +47,11 @@ body {
     cursor: pointer;
 }
 
-#btnSuccessTasks:hover{
+#btnSuccessTasks:hover {
     background-color: #BFFFF1;
 }
 
-#btnDeleteTasks{
+#btnDeleteTasks {
     background-color: #fff;
     width: 250px;
     height: 25px;
@@ -59,67 +59,67 @@ body {
     cursor: pointer;
 }
 
-#btnDeleteTasks:hover{
+#btnDeleteTasks:hover {
     background-color: #BFFFF1;
 }
 
-.FullTasks{
+.FullTasks {
     margin-top: 20px;
     text-align: center;
 }
 
-.FullTasks > ul > li{
+.FullTasks>ul>li {
     display: inline;
 }
 
-#liID{
+#liID {
     margin: 20px;
 }
 
-#liNameTasks{
+#liNameTasks {
     margin: 20px;
 }
 
-#liDateTasks{
+#liDateTasks {
     margin: 20px;
 }
 
-#liDescriptionTasks{
+#liDescriptionTasks {
     margin: 20px;
 }
 
-#liPriorityTasks{
+#liPriorityTasks {
     margin: 20px;
 }
 
-#tblDiv{
+#tblDiv {
     display: flex;
     justify-content: center;
 }
 
-#tblFullTasks{
+#tblFullTasks {
     width: 65%;
     border: 2px solid #80ed99;
     border-radius: 4px;
 }
 
-#tblID{
+#tblID {
     text-align: left;
 }
 
-#tblNameTasks{
+#tblNameTasks {
     text-align: left;
 }
 
-#tblDateTasks{
+#tblDateTasks {
     text-align: left;
 }
 
-#tblDescriptionTasks{
+#tblDescriptionTasks {
     text-align: center;
 }
 
-#tblPriorityTasks{
+#tblPriorityTasks {
     text-align: right;
 }
 
