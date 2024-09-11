@@ -9,8 +9,9 @@
 </head>
 
 <body>
-    <h1>Bem vindo a sua Lista De Tarefas</h1>
-
+    <header>
+        <h1>Bem vindo a sua Lista De Tarefas</h1>
+    </header>
 
     <div id="navigationButtons">
         <a href="./components/newTasks.html"><button id="btnNewTasks">Cadastrar nova tarefa</button></a>
@@ -18,9 +19,30 @@
         <a href="./components/deleteTasks.html"><button id="btnDeleteTasks">Tarefas excluidas</button></a>
     </div>
 
+    <div class="FullTasks">
+        <ul>
+            <li id="liID">ID</li>
+            <li id="liNameTasks">NOME DA TAREFA</li>
+            <li id="liDateTasks">DATA DA TAREFA</li>
+            <li id="liDescriptionTasks">DESCRIÇÃO DA TAREFA</li>
+            <li id="liPriorityTasks">PRIORIDADE</li>
+        </ul>
+    </div>
+
+    <div id="tblDiv">
+        <table id="tblFullTasks">
+            <thead>
+                <td id="tblID">1</td>
+                <td id="tblNameTasks">2</td>
+                <td id="tblDateTasks">3</td>
+                <td id="tblDescriptionTasks">4</td>
+                <td id="tblPriorityTasks">5</td>
+            </thead>
+        </table>
+    </div>
 
     <footer>
-        <p>Criador Gabryel de Souza Modesto</p>
+        <p>Criador: Gabryel de Souza Modesto</p>
     </footer>
 
 

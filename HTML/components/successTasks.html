@@ -11,19 +11,71 @@
 <body>
     <header>
         <h1>Tarefas Feitas</h1>
-        <div id="navigationButtons">
-            <a href="../index.html"><button id="btnBackFirst">Voltar a página inicial</button></a>
-        </div>
         <br>
     </header>
 
     <div id="completedTasks">
         <label for="nameOrID">Informe o nome ou ID da tarefa:</label>
+        <br>
         <input type="text" name="nameOrID" id="nameOrID">
         <br><br>
-
-        <button type="searchSuccessTasks">Pesquisar</button>
     </div>
+
+    <div>
+        <button type="submit" id="searchSuccessTasks">Pesquisar</button>
+    </div>
+
+    <div id="card">
+        <section id="sectionSuccessTasks">
+
+            <div>
+                <label for="tasksID">ID da Tarefa:</label>
+                <br>
+                <input type="text" id="tasksID" name="tasksID" disabled>
+                <br><br>
+            </div>
+
+            <div>
+                <label for="taskCompletedDate">Data de conclusão</label>
+                <br>
+                <input type="date" name="taskCompletedDate" id="taskCompletedDate" disabled>
+                <br><br>
+            </div>
+
+            <div>
+                <label for="tasksName">nome da tarefa realizada:</label>
+                <br>
+                <input type="text" id="tasksName" name="tasksName" disabled>
+                <br><br>
+            </div>
+            <div>
+                <label for="tasksDate">Data da Tarefa:</label>
+                <br>
+                <input type="date" id="tasksDate" disabled>
+                <br><br>
+            </div>
+
+            <div>
+                <label for="tasksDescription">Descrição da Tarefa:</label>
+                <br>
+                <textarea id="tasksDescription" name="tasksDescription" disabled></textarea>
+                <br><br>
+            </div>
+
+            <label for="tasksPriority">Prioridade:</label>
+            <div id="opcoesPriority">
+                <br>
+                <input type="radio" id="priorityAlta" name="tasksPriority" value="Alta" disabled> Alta
+                <input type="radio" id="priorityMedia" name="tasksPriority" value="Média" disabled> Média
+                <input type="radio" id="priorityBaixa" name="tasksPriority" value="Baixa" disabled> Baixa
+                <br><br>
+            </div>
+    </div>
+    </div>
+    <div id="navigationButtons">
+        <a href="../index.html"><button id="btnBackFirst">Voltar a página inicial</button></a>
+    </div>
+
 
     <footer>
         <p>Criado por Gabryel de Souza</p>
